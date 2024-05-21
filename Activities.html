@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Etiqueta raíz del documento, indica el idioma español -->
+<script src="Assets/conf.js"></script>
+<link rel="stylesheet" href="Styles/Style.css"> <!-- Vínculo a la hoja de estilos externa -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Configuración de la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista para dispositivos móviles -->
+    <title>Eventos Universo Cinematográfico de Marvel (UCM)</title> <!-- Título de la página -->
+</head>
+
+<body>
+  <audio src="Music/Song.ogg" loop id="audioPlayer" autoplay></audio>
+
+    <div class="contenedor-principal"> <!-- Contenedor principal -->
+      <button id="boton-play" class="boton-play mostrar" onclick="playAudio()"></button>
+      <button id="boton-pause" class="boton-pause ocultar" onclick="pauseAudio()"></button>
+
+    </div>
+    <div class="div-titulo">
+        <img class="titulo" src="Images/titulo.png" alt=""> <!-- Imagen de título -->
+    </div>
+
+    <h1>Eventos Importantes Del Universo Cinematografico de Marvel (UCM)</h1> <!-- Título principal -->
+
+    <!-- Menú de navegación -->
+    <div class="contendor-columna">
+        <input class="input-button" type="checkbox" id="toggleMenu"> <!-- Checkbox para mostrar/ocultar el menú en dispositivos móviles -->
+    <label  for="toggleMenu" class="menu-icon">&#9776;</label> <!-- Icono de menú (líneas horizontales) -->
+    
+    <!-- Columna izquierda del menú -->
+    <div class="columna columna-izquierda">
+      <!-- Lista de botones de navegación -->
+      <div class="columna-de-botones button">
+        <!-- Enlaces a diferentes páginas -->
+        <a href="Index.html">
+          <div class="button-opcion button_style button_right"> Inicio</div>
+        </a>
+        <a href="Introduction.html">
+          <div class="button-opcion button_style button_right"> Introducción</div>
+        </a>
+        <a href="History.html">
+          <div class="button-opcion button_style button_right"> Historia</div>
+        </a>
+        <a href="Activities.html">
+          <div class="button-opcion button_style button_right"> Eventos</div>
+        </a>
+        <a href="Characters.html">
+          <div class="button-opcion button_style button_right"> Personajes</div>
+        </a>
+        <a href="Location.html">
+          <div class="button-opcion button_style button_right"> Lugares</div>
+        </a>
+        <a href="Map.html">
+          <div class="button-opcion button_style button_right"> Mapa</div>
+        </a>
+        <a href="Bibliography.html">
+          <div class="button-opcion button_style button_right"> Anexos</div>
+        </a>
+      </div>
+      <label  for="toggleMenu" class="menu-icon">&#10006;</label> <!-- Icono de cierre de menú (X) -->
+    </div>
+
+        <!-- Columna derecha del contenido -->
+        <div class="columna columna-derecha">
+            <!-- Contenido de los eventos importantes del UCM -->
+            <div>
+                <p>Los eventos que mas han marcado al UCM son los siguientes: </p>
+                <ul>
+                    <!-- Lista de eventos -->
+                    <li>La creación del primer traje de Iron Man por Tony Stark en "Iron Man" (2008).</li>
+                    <li>La batalla de Nueva York contra los Chitauri en "The Avengers" (2012).</li>
+                    <li>La formación de los Guardianes de la Galaxia en "Guardians of the Galaxy" (2014).</li>
+                    <li>El surgimiento de Ultron y la batalla de Sokovia en "Avengers: Age of Ultron" (2015).</li>
+                    <li>La guerra civil entre los Vengadores en "Captain America: Civil War" (2016).</li>
+                    <li>La destrucción de Asgard y el encuentro con Hela en "Thor: Ragnarok" (2017).</li>
+                    <li>La desaparición de la mitad del universo debido al chasquido de Thanos en "Avengers: Infinity
+                        War" (2018).</li>
+                    <li>La resurrección de los caídos y la derrota de Thanos en "Avengers: Endgame" (2019).</li>
+                    <li>El surgimiento de nuevos héroes como Doctor Strange, Black Panther y Captain Marvel en sus
+                        respectivas películas.</li>
+                    <li>La multiversidad y la introducción de variantes temporales en la serie "Loki" (2021).</li>
+                    <li>La revelación de múltiples realidades alternativas en "Spider-Man: No Way Home" (2021).</li>
+                </ul>
+            </div>
+
+            <!-- Carrusel de imágenes -->
+            <div  class="carousel">
+                <div class="carousel-inner">
+                   <!-- Imágenes del carrusel -->
+                    <div class="carousel-item">
+                        <img src="Images/car1.jpg" alt="Iron Man">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/car2.jpg" alt="Iron Man">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/car3.jpg" alt="Iron Man">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/car4.jpg" alt="Iron Man">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/car5.jpg" alt="Iron Man">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="footer"><span> Angel Guillermo Peñarredonda Silva</span></div>
+
+</body>
+
+</html>

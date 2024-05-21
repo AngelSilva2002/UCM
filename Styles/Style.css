@@ -1,0 +1,486 @@
+/* Importación de fuentes externas */
+@import url('https://fonts.cdnfonts.com/css/the-mighty-avengers');
+@import url('https://fonts.googleapis.com/css?family=Marvel');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilos generales del cuerpo del documento */
+body {
+  font-family: Arial, sans-serif; /* Fuente principal */
+  margin: 0; /* Margen general */
+  padding: 10px; /* Relleno */
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/Fondo2.jpg"); /* Imagen de fondo */
+  background-size: cover; /* Tamaño de la imagen de fondo */
+  background-attachment: fixed; /* Fijar la imagen de fondo */
+  background-position: center; /* Posición de la imagen de fondo */
+  filter: blur(5px); /* Ajusta el valor para más o menos difuminado */
+  z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+
+/* Estilos para el contenedor del título */
+.div-titulo {
+    display: flex; /* Mostrar como flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+/* Estilos para el título */
+.titulo {
+    max-width: 40%; /* Ancho máximo */
+    max-height: 40%; /* Altura máxima */
+}
+
+/* Estilos para las columnas */
+.columna {
+    border-radius: 10px; /* Radio de borde */
+    background-color: #5604fa; /* Color de fondo */
+    border-style: solid; /* Estilo de borde */
+    border-color: #AD0013; /* Color de borde */
+    padding: 20px; /* Relleno */
+    background: rgba(5, 1, 15, 0.6); /* Fondo con transparencia */
+    backdrop-filter: blur(10px); /* Filtro de desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Filtro de desenfoque para WebKit */
+}
+
+/* Media queries para ajustes de diseño en diferentes tamaños de pantalla */
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  .contendor-columna {
+      display: grid; /* Mostrar como grid */
+      grid-template-columns: 1fr 3fr; /* Columnas en proporción */
+  }
+
+  .columna-izquierda {
+      margin-right: 10%; /* Margen derecho */
+      height: fit-content; /* Altura ajustada al contenido */
+  }
+
+  .columna-derecha {
+      margin-left: 0%; /* Margen izquierdo */
+      margin-right: 10%; /* Margen derecho */
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .contendor-columna {
+      grid-template-columns: 1fr; /* Una sola columna */
+  }
+
+  .button-opcion {
+      width: calc(100% / 9) !important; /* Ancho de los botones */
+      margin-left: 0.5%; /* Margen izquierdo */
+  }
+
+  .columna-izquierda {
+      text-align: center; /* Alineación del texto */
+      height: 40px; /* Altura */
+      margin-bottom: 1.5%; /* Margen inferior */
+  }
+
+  .columna-de-botones button {
+      margin-bottom: 10px; /* Margen inferior */
+      width: auto; /* Ancho automático */
+  }
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 800px) {
+  .contendor-columna {
+      grid-template-columns: 1fr; /* Una sola columna */
+  }
+
+  .columna-izquierda, .columna-derecha {
+      margin-left: 0; /* Margen izquierdo */
+      margin-right: 0; /* Margen derecho */
+      max-height: 100%; /* Altura máxima */
+      margin-top: 10px; /* Margen superior */
+  }
+
+  .button_style {
+      margin-bottom: 3% !important; /* Margen inferior */
+  }
+
+  .menu-icon {
+      display: block !important; /* Mostrar el icono */
+      visibility: visible !important; /* Hacer visible */
+  }
+
+  .columna-izquierda {
+      display: none; /* Ocultar la columna izquierda */
+      visibility: hidden; /* Ocultar */
+  }
+
+  #toggleMenu:checked ~ .columna {
+      display: block !important; /* Mostrar el menú */
+      visibility: visible !important; /* Hacer visible */
+  }
+}
+
+.menu-icon {
+    display: none;
+    visibility: hidden; /* Oculta el icono en pantallas más grandes */
+    color: aliceblue;
+    text-align: center;
+    border: 1px solid #AD0013;
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+}
+.menu-icon:hover {
+  background-color: #AD0013; /* Cambia el fondo a rojo al hacer hover */
+}
+.input-button {
+  display: none;
+  visibility: hidden;
+  color: #AD0013;
+}
+
+.a_enlace{
+color: aqua;
+text-decoration-line: underline;
+}
+
+.h2_div{
+  color: aliceblue
+}
+
+.image_contra{
+  margin-left: 3%;
+}
+
+.style_img_der{
+  width: 99%;
+}
+
+.image-container {
+  perspective: 1000px; /* Establece la perspectiva para el efecto 3D */
+}
+
+.image-box {
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+  height: 250px; /* Ajusta la altura según tus necesidades */
+  transform-style: preserve-3d; /* Asegura que los elementos hijos respeten la perspectiva */
+  transition: transform 0.5s; /* Agrega una transición suave al transformar */
+}
+
+.image-box:hover {
+  transform: rotateY(180deg); /* Gira el contenedor al pasar el mouse sobre él */
+}
+
+.img-per{
+  max-width: 200px; 
+  height: auto;
+  margin-right: 20px; 
+}
+
+.ajuste_derecha {
+  margin-right: 3%;
+}
+
+.ajuste_izquierda {
+  margin-left: 3%;
+}
+.image-box .img-per {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Evita que la imagen trasera sea visible durante la rotación */
+}
+
+.image-box .img-per:last-child {
+  transform: rotateY(180deg); /* Gira la segunda imagen hacia atrás */
+}
+
+
+
+.button_style {
+  color: #FFF; /* Color del texto */
+  margin-bottom: 10%; /* Margen inferior */
+  border: 2px solid #AD0013; /* Borde */
+  border-radius: 0px; /* Radio de borde */
+  text-align: center; /* Alineación del texto */
+  padding: 10px 1px; /* Relleno */
+  font-size: 14px; /* Tamaño de fuente */
+  display: inline-block; /* Mostrar como bloque */
+  font-family: "Montserrat", sans-serif; /* Fuente */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  cursor: url('../images/cursor-off.png'), auto; /* Cursor personalizado */
+  box-shadow: inset 0 0 0 0 #AD0013; /* Sombra */
+  -webkit-transition: ease-out 0.4s; /* Transición para WebKit */
+  -moz-transition: ease-out 0.4s; /* Transición para Mozilla */
+  transition: ease-out 0.4s; /* Transición */
+}
+
+
+  .button_right:hover {
+    box-shadow: inset 700px 0 0 0 #AD0013;
+  }
+  
+  #outer {
+    width: 364px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+  }
+
+.button-opcion {
+    height: 200%;
+    width: 100%;
+
+}
+
+.columna-de-botones  {
+    display: block;
+    margin-bottom: 10px; 
+    width: auto;
+}
+.superhero {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .superhero img {
+    max-width: 200px; 
+    margin-right: 20px; 
+    height: 100%; 
+  }
+
+  .superhero-description {
+    
+    overflow: hidden;
+    flex: 1; 
+    
+  }
+  .carousel {
+    width: auto; /* Ancho automático */
+    margin: 0 auto; /* Margen */
+    position: relative; /* Posición */
+    overflow: hidden; /* Ocultar desbordamiento */
+}
+.carousel-inner {
+  display: flex; /* Mostrar como flexbox */
+  animation: scrollCarousel 20s infinite; /* Animación de desplazamiento */
+}
+
+.carousel-item {
+  flex: 0 0 auto; /* No crecer ni encoger */
+  max-width: 100%; /* Ancho máximo */
+  height: 350px; /* Altura */
+}
+
+.carousel-item img {
+  width: 100%; /* Ancho */
+  height: 100%; /* Altura */
+  object-fit: cover; /* Ajuste de objeto */
+}
+
+/* Animación del carrusel */
+@keyframes scrollCarousel {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-380%); }
+}
+.footer {
+  margin-top: 3%; /* Margen superior */
+  bottom: 0; /* Abajo */
+  left: 0; /* Izquierda */
+  right: 0; /* Derecha */
+  padding: 2rem; /* Relleno */
+  background: rgb(37, 5, 82); /* Color de fondo */
+  color: white; /* Color del texto */
+  font-weight: 500; /* Peso de la fuente */
+  display: flex; /* Mostrar como flexbox */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  gap: 0.2rem; /* Espacio entre elementos */
+}
+
+h1 {
+    text-align: center;
+    color: #c4041b;
+    font-family: 'The Mighty Avengers', sans-serif;
+    font-size: 60px;
+    -webkit-text-stroke-width: 0.1px; /* Ancho del borde */
+    -webkit-text-stroke-color: black; /* Color del borde */
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+
+
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+.superhero-description p {
+  word-wrap: break-word;
+}
+
+/* Estilos para las listas */
+li {
+  text-align: justify; /* Alineación del texto */
+  line-height: 1.6; /* Altura de línea */
+  color: aliceblue; /* Color del texto */
+  font-family: "Montserrat", sans-serif; /* Fuente */
+  font-optical-sizing: auto; /* Tamaño óptico */
+  word-wrap: break-word; /* Romper palabras */
+}
+
+.boton-play {
+  background-color: transparent;
+  border: none; /* Elimina el borde del botón */
+  width: 40px;
+  height: 40px;
+  background-image: url('../Images/Icons/soundOn.png');
+  background-size: contain; /* Ajusta el tamaño de la imagen a su contenedor */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  margin-left: 90%; /* Espacio a la derecha para el icono */
+  position: relative; /* Permite posicionar el icono con respecto al botón */
+}
+
+.boton-pause {
+  background-color: transparent;
+  border: none; /* Elimina el borde del botón */
+  width: 40px;
+  height: 40px;
+  background-image: url('../Images/Icons/soundOff.png');
+  background-size: contain; /* Ajusta el tamaño de la imagen a su contenedor */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  margin-left: 90%; /* Espacio a la derecha para el icono */
+  position: relative; /* Permite posicionar el icono con respecto al botón */
+
+}
+
+.ocultar {
+
+  display: none !important;
+}
+
+.mostrar {
+  display: block !important;
+}
+
+.mapstyle {
+  position: relative;
+}
+.popup {
+  position: absolute;
+  font-family: 'Source Sans Pro', sans-serif; 
+  font-weight: 300;
+  font-style: normal;
+  text-align: left;
+  visibility: hidden;  /* Oculta el elemento por defecto */
+  background-size: cover; 
+  border-radius: 10px;  /* Redondea los bordes del elemento */
+  padding: 3% 3% 3% 3%;
+  color: white;
+  z-index: 10;
+}
+
+#popup1 {
+  width: 45%;
+  top:8%;
+  left:17%;
+}
+
+.pin-Cap {
+  position: absolute;
+  width: 4%;
+  height:5%;
+  background-image: url("../Images/Icons/CA.png");
+  background-size: cover; 
+  bottom:78%;
+  left:15%;
+}
+
+.pin-Iron {
+  position: absolute;
+  width: 4%;
+  height:5%;
+  background-image: url("../Images/Icons/IM.png");
+  background-size: cover; 
+  bottom:45%;
+  left:10%;
+}
+
+.pin-Thor {
+  position: absolute;
+  width: 4%;
+  height:6%;
+  background-image: url("../Images/Icons/TH.png");
+  background-size: cover; 
+  bottom: 32%;
+  left:32%;
+}
+
+.pin-Loki {
+  position: absolute;
+  width: 4%;
+  height:5%;
+  background-image: url("../Images/Icons/LO.png");
+  background-size: cover; 
+  bottom: 52%;
+  left:16%;
+}
+
+.pin-Ave {
+  position: absolute;
+  width: 4%;
+  height:5%;
+  background-image: url("../Images/Icons/AV.png");
+  background-size: cover; 
+}
+
+.pin-Ant {
+  position: absolute;
+  width: 4%;
+  height:5%;
+  background-image: url("../Images/Icons/AN.png");
+  background-size: cover; 
+  bottom:28%;
+  left:72%;
+}
+
+.pin-Black {
+  position: absolute;
+  width: 4%;
+  height:5%;
+  background-image: url("../Images/Icons/BW.png");
+  background-size: cover; 
+  bottom:52%;
+  left:70%;
+}
+.pin-Spiderman {
+  position: absolute;
+  width: 3%;
+  height:5.5%;
+  background-image: url("../Images/Icons/SP.png");
+  background-size: cover; 
+  bottom:52%;
+  left:83%;
+}
+#Av1{
+  bottom:64%;
+  left:81%;
+}
+
+#Av2{
+  bottom: 47%;
+  left:78%;
+}

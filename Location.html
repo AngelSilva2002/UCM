@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Etiqueta raíz del documento, indica el idioma español -->
+<script src="Assets/conf.js"></script>
+<link rel="stylesheet" href="Styles/Style.css"> <!-- Vínculo a la hoja de estilos externa -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Configuración de la codificación de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configuración de la vista para dispositivos móviles -->
+  <title>Eventos Universo Cinematográfico de Marvel (UCM)</title> <!-- Título de la página -->
+</head>
+
+<body>
+  <audio src="Music/Song.ogg" loop id="audioPlayer" autoplay></audio>
+
+  <div class="contenedor-principal"> <!-- Contenedor principal -->
+    <button id="boton-play" class="boton-play mostrar" onclick="playAudio()"></button>
+    <button id="boton-pause" class="boton-pause ocultar" onclick="pauseAudio()"></button>
+
+  </div>
+  <div class="div-titulo">
+    <img class="titulo" src="Images/titulo.png" alt=""> <!-- Imagen de título -->
+  </div>
+
+  <h1>Eventos Importantes Del Universo Cinematografico de Marvel (UCM)</h1> <!-- Título principal -->
+
+  <!-- Menú de navegación -->
+  <div class="contendor-columna">
+    <input class="input-button" type="checkbox" id="toggleMenu">
+    <!-- Checkbox para mostrar/ocultar el menú en dispositivos móviles -->
+    <label for="toggleMenu" class="menu-icon">&#9776;</label> <!-- Icono de menú (líneas horizontales) -->
+
+    <!-- Columna izquierda del menú -->
+    <div class="columna columna-izquierda">
+      <!-- Lista de botones de navegación -->
+      <div class="columna-de-botones button">
+        <!-- Enlaces a diferentes páginas -->
+        <a href="Index.html">
+          <div class="button-opcion button_style button_right"> Inicio</div>
+        </a>
+        <a href="Introduction.html">
+          <div class="button-opcion button_style button_right"> Introducción</div>
+        </a>
+        <a href="History.html">
+          <div class="button-opcion button_style button_right"> Historia</div>
+        </a>
+        <a href="Activities.html">
+          <div class="button-opcion button_style button_right"> Eventos</div>
+        </a>
+        <a href="Characters.html">
+          <div class="button-opcion button_style button_right"> Personajes</div>
+        </a>
+        <a href="Location.html">
+          <div class="button-opcion button_style button_right"> Lugares</div>
+        </a>
+        <a href="Map.html">
+          <div class="button-opcion button_style button_right"> Mapa</div>
+        </a>
+        <a href="Bibliography.html">
+          <div class="button-opcion button_style button_right"> Anexos</div>
+        </a>
+        
+      </div>
+      <label for="toggleMenu" class="menu-icon">&#10006;</label> <!-- Icono de cierre de menú (X) -->
+    </div>
+
+    <!-- Columna derecha del contenido -->
+    <div class="columna columna-derecha">
+
+      <div>
+        <!-- Descripción de los lugares importantes -->
+        <div class="superhero">
+          <img src="Images/torre_stark.webp" alt="Iron Man"><!-- Imagen del lugar -->
+          <div class="superhero-description">
+            <h2 class="h2_div">La Torre Stark</h2> <!-- Resumen -->
+            <p> La Torre Stark, anteriormente conocida como la Torre de los Vengadores, es un rascacielos emblemático
+              ubicado en Manhattan, Nueva York. Sirve como la residencia y la base de operaciones de Tony Stark, también
+              conocido como Iron Man. La Torre Stark ha sido un lugar importante en numerosas películas del UCM, donde
+              se han planeado estrategias, se han almacenado tecnologías avanzadas y se han celebrado reuniones de
+              superhéroes.</p>
+          </div>
+        </div>
+
+        <div class="superhero">
+
+          <div class="superhero-description">
+            <h2 class="h2_div">Asgard</h2> <!-- Resumen -->
+            <p>Asgard es uno de los Nueve Reinos y es el hogar de los asgardianos, una raza de seres poderosos
+              inspirados en la mitología nórdica. Este reino celestial está situado en otro plano de existencia y está
+              gobernado por Odin y más tarde por Thor. Asgard ha sido presentado en varias películas del UCM, incluyendo
+              "Thor" y "Thor: Ragnarok", donde sus majestuosas ciudades y su cultura guerrera han sido destacadas.</p>
+          </div>
+          <img class="image_contra" src="Images/asgard.jpg" alt="Iron Man"> <!-- Imagen del lugar -->
+        </div>
+
+        <div class="superhero">
+          <img src="Images/wakanda.webp" alt="Iron Man"> <!-- Imagen del lugar -->
+          <div class="superhero-description">
+            <h2 class="h2_div">Wakanda</h2> <!-- Resumen -->
+            <p class="p_arreglado" >Wakanda es una nación africana ficticia conocida por ser el único lugar en la Tierra donde se encuentra
+              el Vibranium, un metal extremadamente raro y poderoso. La capital de Wakanda es la ciudad de Birnin Zana,
+              que se esconde detrás de una apariencia de pobreza para proteger su tecnología avanzada. Wakanda es el
+              hogar de Black Panther y ha sido presentado en la película "Black Panther", así como en "Vengadores:
+              Infinity War" y "Vengadores: Endgame".</p>
+          </div>
+        </div>
+
+        <div class="superhero">
+
+          <div class="superhero-description">
+            <h2 class="h2_div">Knowhere</h2> <!-- Resumen -->
+            <p>Knowhere es una estación espacial construida dentro del cráter de una cabeza gigante en descomposición de
+              un Celestial. Este lugar es conocido como un punto de encuentro para mercenarios, contrabandistas y todo
+              tipo de seres alienígenas. Knowhere ha aparecido en la película "Guardianes de la Galaxia" y es el hogar
+              de Taneleer Tivan, también conocido como el Coleccionista.</p>
+          </div>
+          <img class="image_contra" src="Images/kw.webp" alt="Iron Man"> <!-- Imagen del lugar -->
+        </div>
+
+
+        <div>
+          <!-- Link para ver mas información -->
+          <span class="h2_div">Para conocer mas lugares del UCM </span><a class="a_enlace"
+            href="https://aminoapps.com/c/marvelesa/page/blog/todos-los-lugares-de-marvel-ucm/vzB7_zGsnu1Eeewbkpgew1mz1BGnVggaEM"><span>
+              mira este link
+            </span></a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<!-- Pie de pagina -->
+  <div class="footer"><span> Angel Guillermo Peñarredonda Silva</span></div>
+
+</body>
+
+</html>

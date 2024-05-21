@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Etiqueta raíz del documento, indica el idioma español -->
+<script src="Assets/conf.js"></script>
+<link rel="stylesheet" href="Styles/Style.css"> <!-- Vínculo a la hoja de estilos externa -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Configuración de la codificación de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configuración de la vista para dispositivos móviles -->
+  <title>Eventos Universo Cinematográfico de Marvel (UCM)</title> <!-- Título de la página -->
+</head>
+
+<body>
+  <audio src="Music/Song.ogg" loop id="audioPlayer" autoplay></audio>
+
+  <div class="contenedor-principal"> <!-- Contenedor principal -->
+    <button id="boton-play" class="boton-play mostrar" onclick="playAudio()"></button>
+    <button id="boton-pause" class="boton-pause ocultar" onclick="pauseAudio()"></button>
+  </div>
+  <div class="div-titulo">
+    <img class="titulo" src="Images/titulo.png" alt=""> <!-- Imagen de título -->
+  </div>
+
+  <h1>Eventos Importantes Del Universo Cinematografico de Marvel (UCM)</h1> <!-- Título principal -->
+
+  <!-- Menú de navegación -->
+  <div class="contendor-columna">
+    <input class="input-button" type="checkbox" id="toggleMenu">
+    <!-- Checkbox para mostrar/ocultar el menú en dispositivos móviles -->
+    <label for="toggleMenu" class="menu-icon">&#9776;</label> <!-- Icono de menú (líneas horizontales) -->
+
+    <!-- Columna izquierda del menú -->
+    <div class="columna columna-izquierda">
+      <!-- Lista de botones de navegación -->
+      <div class="columna-de-botones button">
+        <!-- Enlaces a diferentes páginas -->
+        <a href="Index.html">
+          <div class="button-opcion button_style button_right"> Inicio</div>
+        </a>
+        <a href="Introduction.html">
+          <div class="button-opcion button_style button_right"> Introducción</div>
+        </a>
+        <a href="History.html">
+          <div class="button-opcion button_style button_right"> Historia</div>
+        </a>
+        <a href="Activities.html">
+          <div class="button-opcion button_style button_right"> Eventos</div>
+        </a>
+        <a href="Characters.html">
+          <div class="button-opcion button_style button_right"> Personajes</div>
+        </a>
+        <a href="Location.html">
+          <div class="button-opcion button_style button_right"> Lugares</div>
+        </a>
+        <a href="Map.html">
+          <div class="button-opcion button_style button_right"> Mapa</div>
+        </a>
+        <a href="Bibliography.html">
+          <div class="button-opcion button_style button_right"> Anexos</div>
+        </a>
+      </div>
+      <label for="toggleMenu" class="menu-icon">&#10006;</label> <!-- Icono de cierre de menú (X) -->
+    </div>
+
+    <!-- Columna derecha del contenido -->
+    <div class="columna columna-derecha">
+
+            <div><!-- Información -->
+                <p>El Universo Cinematográfico de Marvel (UCM) es una franquicia de medios que se centra en una serie de películas y series de televisión producidas por Marvel Studios. Estas historias están basadas en personajes que aparecen en los cómics publicados por Marvel Comics.</p>
+                <p>El UCM comenzó con la película "Iron Man" en 2008, dirigida por Jon Favreau y protagonizada por Robert Downey Jr. como Tony Stark/Iron Man. Esta película sentó las bases para un universo compartido en el que todas las historias están interconectadas.</p>
+                <p>A lo largo de los años, el UCM ha crecido enormemente, expandiéndose a través de diversas fases que han introducido nuevos personajes y tramas emocionantes. La narrativa del UCM abarca desde héroes individuales hasta épicas batallas intergalácticas.</p>
+                <p>Los pilares del UCM incluyen equipos de superhéroes como "Los Vengadores" y "Guardianes de la Galaxia", así como personajes individuales como "Pantera Negra", "Capitana Marvel" y "Spider-Man". Cada película y serie agrega capas a la rica historia del universo compartido.</p>
+                <p>El UCM se ha ganado elogios por su capacidad para entrelazar historias complejas, desarrollar personajes memorables y ofrecer emocionantes espectáculos visuales. Ha establecido nuevos estándares en el género de películas de superhéroes y ha cautivado a audiencias de todo el mundo.</p>
+                <p>En resumen, el Universo Cinematográfico de Marvel (UCM) es un fenómeno cultural que ha transformado la forma en que percibimos las películas de superhéroes, ofreciendo un mundo vasto y diverso lleno de aventuras emocionantes y personajes inolvidables.</p>
+            </div>
+
+    
+        </div>
+    </div>
+
+    <!-- Pie de pagina -->
+    <div class="footer"><span> Angel Guillermo Peñarredonda Silva</span></div>
+
+</body>
+</html>

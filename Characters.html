@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Etiqueta raíz del documento, indica el idioma español -->
+<script src="Assets/conf.js"></script>
+<link rel="stylesheet" href="Styles/Style.css"> <!-- Vínculo a la hoja de estilos externa -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Configuración de la codificación de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configuración de la vista para dispositivos móviles -->
+  <title>Eventos Universo Cinematográfico de Marvel (UCM)</title> <!-- Título de la página -->
+</head>
+
+<body>
+  <audio src="Music/Song.ogg" loop id="audioPlayer" autoplay></audio>
+
+  <div class="contenedor-principal"> <!-- Contenedor principal -->
+    <button id="boton-play" class="boton-play mostrar" onclick="playAudio()"></button>
+    <button id="boton-pause" class="boton-pause ocultar" onclick="pauseAudio()"></button>
+
+  </div>
+  <div class="div-titulo">
+    <img class="titulo" src="Images/titulo.png" alt=""> <!-- Imagen de título -->
+  </div>
+
+  <h1>Eventos Importantes Del Universo Cinematografico de Marvel (UCM)</h1> <!-- Título principal -->
+
+  <!-- Menú de navegación -->
+  <div class="contendor-columna">
+    <input class="input-button" type="checkbox" id="toggleMenu">
+    <!-- Checkbox para mostrar/ocultar el menú en dispositivos móviles -->
+    <label for="toggleMenu" class="menu-icon">&#9776;</label> <!-- Icono de menú (líneas horizontales) -->
+
+    <!-- Columna izquierda del menú -->
+    <div class="columna columna-izquierda">
+      <!-- Lista de botones de navegación -->
+      <div class="columna-de-botones button">
+        <!-- Enlaces a diferentes páginas -->
+        <a href="Index.html">
+          <div class="button-opcion button_style button_right"> Inicio</div>
+        </a>
+        <a href="Introduction.html">
+          <div class="button-opcion button_style button_right"> Introducción</div>
+        </a>
+        <a href="History.html">
+          <div class="button-opcion button_style button_right"> Historia</div>
+        </a>
+        <a href="Activities.html">
+          <div class="button-opcion button_style button_right"> Eventos</div>
+        </a>
+        <a href="Characters.html">
+          <div class="button-opcion button_style button_right"> Personajes</div>
+        </a>
+        <a href="Location.html">
+          <div class="button-opcion button_style button_right"> Lugares</div>
+        </a>
+        <a href="Map.html">
+          <div class="button-opcion button_style button_right"> Mapa</div>
+        </a>
+        <a href="Bibliography.html">
+          <div class="button-opcion button_style button_right"> Anexos</div>
+        </a>
+      </div>
+      <label for="toggleMenu" class="menu-icon">&#10006;</label> <!-- Icono de cierre de menú (X) -->
+    </div>
+
+    <!-- Columna derecha del contenido -->
+    <div class="columna columna-derecha">
+
+      <div>
+
+        <div> <!-- Inicio de texto -->
+          <p class="h2">En el UCM hay demasiados personajes, siendo mas de 100 los que conviven en este universo, los
+            mas importantes que podemos encontrar son los siguientes: (pasa el cursor sobre las imagenes para ver otra
+            imagen del heroe)</p>
+        </div>
+
+        <div class="superhero"> <!-- Caja de información -->
+          <div class="image-container ajuste_derecha">
+            <div class="image-box"> <!-- Imagenes del superheroe -->
+              <img class="img-per" src="Images/ironman.jpg" alt="Iron Man">
+              <img class="img-per" src="Images/Ironman2.webp" alt="Iron Man">
+            </div>
+          </div>
+
+          <div class="superhero-description"> <!-- Descripción del superheroe -->
+            <h2 class="h2_div">Iron Man</h2>
+            <p><strong>Nombre Real:</strong> Tony Stark</p> 
+            <p><strong>Descripción:</strong> Tony Stark es un genio inventor, empresario multimillonario y playboy que
+              desarrolla una armadura de alta tecnología para salvar su propia vida después de ser gravemente herido.
+              Adopta la identidad de Iron Man y utiliza su tecnología para combatir amenazas tanto internas como
+              externas, convirtiéndose en uno de los líderes de los Vengadores.</p>
+          </div>
+        </div>
+
+        <div class="superhero"> <!-- Caja de información -->
+
+          <div class="superhero-description"> <!-- Descripción del superheroe -->
+            <h2 class="h2_div">Capitan America</h2>
+            <p><strong>Nombre Real:</strong> Steve Rogers</p>
+            <p><strong>Descripción:</strong> Steve Rogers es un joven frágil y débil que se ofrece como voluntario para
+              un experimento para crear un súper soldado durante la Segunda Guerra Mundial. Como resultado, se convierte
+              en Captain America, un símbolo de valentía, honor y patriotismo. Lidera a los Vengadores en la lucha
+              contra el mal, siempre dispuesto a sacrificarlo todo por el bien común.</p>
+          </div>
+          <div class="image-container ajuste_izquierda"> <!-- Imagenes del superheore -->
+            <div class="image-box">
+              <img class="img-per" src="Images/capam.avif" alt="Iron Man">
+              <img class="img-per" src="Images/capam2.png" alt="Iron Man">
+            </div>
+          </div>
+        </div>
+
+        <div class="superhero"> <!-- Caja de información -->
+          <div class="image-container ajuste_derecha"> <!-- Imagenes del superheroe -->
+            <div class="image-box">
+              <img class="img-per" src="Images/thor.jpeg" alt="Iron Man">
+              <img class="img-per" src="Images/thor2.png" alt="Iron Man">
+            </div>
+          </div>
+          <div class="superhero-description">
+            <h2 class="h2_div">Thor</h2> <!-- Descripción del superheroe -->
+            <p><strong>Nombre Real:</strong> Thor Odinson</p>
+            <p><strong>Descripción:</strong> Thor es el príncipe de Asgard y el dios del trueno, dotado con increíbles
+              poderes y armado con su martillo mágico, Mjolnir. A pesar de su arrogancia inicial, Thor aprende humildad
+              y responsabilidad a lo largo de sus aventuras en la Tierra, donde se une a los Vengadores para proteger el
+              mundo de las amenazas cósmicas y terrestres.</p>
+          </div>
+        </div>
+
+        <div class="superhero"> <!-- Caja de información -->
+
+          <div class="superhero-description">
+            <h2 class="h2_div">Hulk</h2>
+            <p><strong>Nombre Real:</strong> Bruce Banner</p> <!-- Descripción del superheroe -->
+            <p><strong>Descripción:</strong> Bruce Banner es un brillante científico que se transforma en Hulk, una
+              monstruosa criatura verde con una fuerza sobrehumana, después de ser expuesto a la radiación gamma. A
+              menudo lucha contra su propia ira y dualidad mientras intenta controlar al monstruo dentro de él, mientras
+              se une a los Vengadores para luchar contra enemigos poderosos.</p>
+          </div>
+          <div class="image-container ajuste_izquierda">
+            <div class="image-box"> <!-- Imagenes del superheore -->
+              <img class="img-per" src="Images/hulk.jpg" alt="Iron Man">
+              <img class="img-per" src="Images/hulk2.png" alt="Iron Man">
+            </div>
+          </div>
+        </div>
+
+        <div class="superhero"> <!-- Caja de información -->
+          <div class="image-container ajuste_derecha"> <!-- Imagenes del superheore -->
+            <div class="image-box ">
+              <img class="img-per" src="Images/strange.webp" alt="Iron Man">
+              <img class="img-per" src="Images/strange2.png" alt="Iron Man">
+            </div>
+          </div>
+          <div class="superhero-description">
+            <h2 class="h2_div">Doctor Strange</h2>
+            <p><strong>Nombre Real:</strong> Stephen Strange </p> <!-- Descripción del superheroe -->
+            <p><strong>Descripción:</strong> Stephen Strange es un brillante neurocirujano que sufre un accidente
+              automovilístico que le causa graves lesiones en las manos. En busca de una cura, encuentra al Anciano,
+              quien lo inicia en las artes místicas y lo convierte en el Hechicero Supremo, protector de la realidad
+              contra amenazas místicas y dimensionales.</p>
+          </div>
+        </div>
+
+        <div class="superhero"> <!-- Caja de información -->
+
+          <div class="superhero-description"> <!-- Descripción del superheroe -->
+            <h2 class="h2_div">Captain Marvel</h2>
+            <p><strong>Nombre Real:</strong> Carol Danvers</p>
+            <p><strong>Descripción:</strong> Carol Danvers es una piloto de la Fuerza Aérea de los Estados Unidos que
+              obtiene poderes sobrehumanos después de ser expuesta a una explosión de un motor experimental alienígena.
+              Adopta el nombre de Captain Marvel y se convierte en una poderosa heroína cósmica, defendiendo la Tierra y
+              el universo de amenazas intergalácticas.</p>
+          </div>
+          <div class="image-container ajuste_izquierda"> <!-- Imagenes del superheroe -->
+            <div class="image-box">
+              <img class="img-per" src="Images/capmar.avif" alt="Iron Man">
+              <img class="img-per" src="Images/capmar2.png" alt="Iron Man">
+            </div>
+          </div>
+        </div>
+        <div>
+          <!-- Link para ver mas -->
+          <span class="h2_div">Para conocer mas heroes del UCM </span><a class="a_enlace"
+            href="https://disney.fandom.com/es/wiki/Categor%C3%ADa:Personajes_del_Universo_Cinematogr%C3%A1fico_de_Marvel"><span>
+              haz click aquí
+            </span></a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Pie de pagina -->
+  <div class="footer"><span> Angel Guillermo Peñarredonda Silva</span></div>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Etiqueta raíz del documento, indica el idioma español -->
+<script src="Assets/conf.js"></script>
+<link rel="stylesheet" href="Styles/Style.css"> <!-- Vínculo a la hoja de estilos externa -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Configuración de la codificación de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configuración de la vista para dispositivos móviles -->
+  <title>Eventos Universo Cinematográfico de Marvel (UCM)</title> <!-- Título de la página -->
+</head>
+
+<body>
+  <audio src="Music/Song.ogg" loop id="audioPlayer" autoplay></audio>
+
+  <div class="contenedor-principal"> <!-- Contenedor principal -->
+    <button id="boton-play" class="boton-play mostrar" onclick="playAudio()"></button>
+    <button id="boton-pause" class="boton-pause ocultar" onclick="pauseAudio()"></button>
+
+  </div>
+  <div class="div-titulo">
+    <img class="titulo" src="Images/titulo.png" alt=""> <!-- Imagen de título -->
+  </div>
+
+  <h1>Eventos Importantes Del Universo Cinematografico de Marvel (UCM)</h1> <!-- Título principal -->
+
+  <!-- Menú de navegación -->
+  <div class="contendor-columna">
+    <input class="input-button" type="checkbox" id="toggleMenu">
+    <!-- Checkbox para mostrar/ocultar el menú en dispositivos móviles -->
+    <label for="toggleMenu" class="menu-icon">&#9776;</label> <!-- Icono de menú (líneas horizontales) -->
+
+    <!-- Columna izquierda del menú -->
+    <div class="columna columna-izquierda">
+      <!-- Lista de botones de navegación -->
+      <div class="columna-de-botones button">
+        <!-- Enlaces a diferentes páginas -->
+        <a href="Index.html">
+          <div class="button-opcion button_style button_right"> Inicio</div>
+        </a>
+        <a href="Introduction.html">
+          <div class="button-opcion button_style button_right"> Introducción</div>
+        </a>
+        <a href="History.html">
+          <div class="button-opcion button_style button_right"> Historia</div>
+        </a>
+        <a href="Activities.html">
+          <div class="button-opcion button_style button_right"> Eventos</div>
+        </a>
+        <a href="Characters.html">
+          <div class="button-opcion button_style button_right"> Personajes</div>
+        </a>
+        <a href="Location.html">
+          <div class="button-opcion button_style button_right"> Lugares</div>
+        </a>
+        <a href="Map.html">
+          <div class="button-opcion button_style button_right"> Mapa</div>
+        </a>
+        <a href="Bibliography.html">
+          <div class="button-opcion button_style button_right"> Anexos</div>
+        </a>
+      </div>
+      <label for="toggleMenu" class="menu-icon">&#10006;</label> <!-- Icono de cierre de menú (X) -->
+    </div>
+
+    <!-- Columna derecha del contenido -->
+    <div class="columna columna-derecha">
+      <img class="titulo" src="Images/mavel.png" alt="">
+
+
+      <!-- Referencias bibliograficas -->
+      <div>
+        <p><Strong>Referencias:</Strong></p>
+
+        <ul>
+
+          <li>
+            Disney:
+
+            Disney (s. f). Disney: personajes de marvel. Recuperado de
+            https://disney.fandom.com/es/wiki/Categor%C3%ADa:Personajes_del_Universo_Cinematogr%C3%A1fico_de_Marvel
+
+          </li>
+
+
+          <li>
+            Pagina web - Youtube:
+            Te lo resumo asi nomas. (s. f). Youtube. Recuperado de
+            https://www.youtube.com/watch?v=55xWZ7bKMcs&list=PLPZ1i5C50RxBvt2r-J9ekCc2YCPWdS2ef
+          </li>
+
+          <li>Página web - Marvel.com:
+
+            Marvel Entertainment. (s. f.). Marvel: The Official Site. Recuperado de https://www.marvel.com/
+          </li>
+
+          <li>
+            Cinemascomics. (s. f.). Cinemascomics. Recuperado de https://www.cinemascomics.com/
+          </li>
+
+          <li>
+            Wikipedia. (s. f.). Universo cinematográfico de Marvel. Recuperado de
+            https://es.wikipedia.org/wiki/Universo_cinematográfico_de_Marvel
+          </li>
+        </ul>
+
+        <p><strong>Imagenes:</strong></p>
+        <ul>
+          <li>
+            https://rpp.pe/famosos/celebridades/chris-evans-no-descarta-volver-como-capitan-america-de-marvel-no-lo-haria-por-dinero-noticia-1506388
+          </li>
+          <li>https://marvelcinematicdatabase.fandom.com/wiki/Asgard</li>
+          <li>https://www.britannica.com/topic/Iron-Man-comic-book-character</li>
+          <li>
+            https://www.menshealth.com/es/noticias-deportivas-masculinas/g40537701/chris-hemsworth-las-fotos-que-nunca-has-visto-de-sus-inicios-como-actor/
+          </li>
+          <li>https://es.wikipedia.org/wiki/Hulk</li>
+          <p>y mas...</p>
+
+
+        </ul>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <!-- Pie de pagina -->
+  <div class="footer"><span> Angel Guillermo Peñarredonda Silva</span></div>
+
+</body>
+
+</html>
