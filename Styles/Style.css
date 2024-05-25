@@ -52,6 +52,16 @@ body::before {
     -webkit-backdrop-filter: blur(10px); /* Filtro de desenfoque para WebKit */
 }
 
+.columna2 {
+  border-radius: 10px; /* Radio de borde */
+  background-color: #5604fa; /* Color de fondo */
+  border-style: solid; /* Estilo de borde */
+  border-color: #AD0013; /* Color de borde */
+  background: rgba(5, 1, 15, 0.6); /* Fondo con transparencia */
+  backdrop-filter: blur(10px); /* Filtro de desenfoque */
+  -webkit-backdrop-filter: blur(10px); /* Filtro de desenfoque para WebKit */
+}
+
 /* Media queries para ajustes de diseño en diferentes tamaños de pantalla */
 @media screen and (min-width: 801px) and (max-width: 1200px) {
   .contendor-columna {
@@ -68,9 +78,199 @@ body::before {
       margin-left: 0%; /* Margen izquierdo */
       margin-right: 10%; /* Margen derecho */
   }
+  
+.pin-Cap {
+  position: absolute;
+  width: 4%;
+  height:5%;
+  background-image: url("../Images/Icons/CA.png");
+  background-size: cover; 
+  bottom:78%;
+  left:15%;
+}
+
+.pin-Iron {
+  position: absolute;
+  width: 4%;
+  height:5%;
+  background-image: url("../Images/Icons/IM.png");
+  background-size: cover; 
+  bottom:45%;
+  left:10%;
+}
+
+.pin-Thor {
+  position: absolute;
+  width: 4%;
+  height:6%;
+  background-image: url("../Images/Icons/TH.png");
+  background-size: cover; 
+  bottom: 32%;
+  left:32%;
+}
+
+.pin-Loki {
+  position: absolute;
+  width: 4%;
+  height:5%;
+  background-image: url("../Images/Icons/LO.png");
+  background-size: cover; 
+  bottom: 52%;
+  left:16%;
+}
+
+.pin-CapMar {
+  position: absolute;
+  width: 5%;
+  height:5%;
+  background-image: url("../Images/Icons/capMar.png");
+  background-size:cover; 
+  bottom:55%;
+  left:52%;
+}
+
+
+.pin-Ave {
+  position: absolute;
+  width: 4%;
+  height:5%;
+  background-image: url("../Images/Icons/AV.png");
+  background-size: cover; 
+}
+
+.pin-Ant {
+  position: absolute;
+  width: 4%;
+  height:5%;
+  background-image: url("../Images/Icons/AN.png");
+  background-size: cover; 
+  bottom:28%;
+  left:72%;
+}
+
+.pin-Black {
+  position: absolute;
+  width: 4%;
+  height:5%;
+  background-image: url("../Images/Icons/BW.png");
+  background-size: cover; 
+  bottom:52%;
+  left:70%;
+}
+.pin-Spiderman {
+  position: absolute;
+  width: 3%;
+  height:5.5%;
+  background-image: url("../Images/Icons/SP.png");
+  background-size: cover; 
+  bottom:52%;
+  left:83%;
+}
+#Av1{
+  bottom:64%;
+  left:81%;
+}
+
+#Av2{
+  bottom: 47%;
+  left:78%;
+}
+
+#popup1 {
+  width: 50%;
+  height: 60px;
+  top:8%;
+  left:20%;
+  background-image: url("../Images/Popup/1.jpg");
+  font-size: 50%;
+}
+
+#popup2 {
+  width: 50%;
+  height: 60px;
+  top:38%;
+  left:21%;
+  background-image: url("../Images/Popup/2.jpeg");
+  font-size: 50%;
+
+}
+
+#popup3 {
+  width: 50%;
+  height: 60px;
+  top:48%;
+  left:14%;
+  background-image: url("../Images/Popup/3.webp");
+  font-size: 50%;
+
+}
+
+#popup4 {
+  width: 50%;
+  height: 60px;
+  top:42%;
+  left:38%;
+  background-image: url("../Images/Popup/4.webp");
+  font-size: 50%;
+
+}
+
+#popup5 {
+  width: 40%;
+  height: 60px;
+  top:38%;
+  left:23%;
+  background-image: url("../Images/Popup/5.jpg");
+  font-size: 50%;
+
+}
+
+#popup6 {
+  width: 40%;
+  height: 60px;
+  top:25%;
+  left:34%;
+  background-image: url("../Images/Popup/6.webp");
+  font-size: 50%;
+
+}
+
+#popup7 {
+  width: 40%;
+  height: 60px;
+  top:35%;
+  left:34%;
+  background-image: url("../Images/Popup/7.webp");
+  font-size: 50%;
+
+}
+
+#popup8 {
+  width: 40%;
+  height: 60px;
+  top:20%;
+  left:5%;
+  background-image: url("../Images/Popup/8.jpg");
+  font-size: 50%;
+
+}
+
+#popup9 {
+  width: 40%;
+  height: 60px;
+  top:47%;
+  left:24%;
+  background-image: url("../Images/Popup/9.webp");
+  font-size: 50%;
+
+}
+
+
 }
 
 @media screen and (min-width: 1201px) {
+
+  
   .contendor-columna {
       grid-template-columns: 1fr; /* Una sola columna */
   }
@@ -90,6 +290,176 @@ body::before {
       margin-bottom: 10px; /* Margen inferior */
       width: auto; /* Ancho automático */
   }
+  
+  .pin-Cap {
+    position: absolute;
+    width: 4%;
+    height:5%;
+    background-image: url("../Images/Icons/CA.png");
+    background-size: cover; 
+    bottom:78%;
+    left:15%;
+  }
+  
+  .pin-Iron {
+    position: absolute;
+    width: 4%;
+    height:5%;
+    background-image: url("../Images/Icons/IM.png");
+    background-size: cover; 
+    bottom:45%;
+    left:10%;
+  }
+  
+  .pin-Thor {
+    position: absolute;
+    width: 4%;
+    height:6%;
+    background-image: url("../Images/Icons/TH.png");
+    background-size: cover; 
+    bottom: 32%;
+    left:32%;
+  }
+  
+  .pin-Loki {
+    position: absolute;
+    width: 4%;
+    height:5%;
+    background-image: url("../Images/Icons/LO.png");
+    background-size: cover; 
+    bottom: 52%;
+    left:16%;
+  }
+  
+  .pin-CapMar {
+    position: absolute;
+    width: 5%;
+    height:5%;
+    background-image: url("../Images/Icons/capMar.png");
+    background-size:cover; 
+    bottom:55%;
+    left:52%;
+  }
+  
+  
+  .pin-Ave {
+    position: absolute;
+    width: 4%;
+    height:5%;
+    background-image: url("../Images/Icons/AV.png");
+    background-size: cover; 
+  }
+  
+  .pin-Ant {
+    position: absolute;
+    width: 4%;
+    height:5%;
+    background-image: url("../Images/Icons/AN.png");
+    background-size: cover; 
+    bottom:28%;
+    left:72%;
+  }
+  
+  .pin-Black {
+    position: absolute;
+    width: 4%;
+    height:5%;
+    background-image: url("../Images/Icons/BW.png");
+    background-size: cover; 
+    bottom:52%;
+    left:70%;
+  }
+  .pin-Spiderman {
+    position: absolute;
+    width: 3%;
+    height:5.5%;
+    background-image: url("../Images/Icons/SP.png");
+    background-size: cover; 
+    bottom:52%;
+    left:83%;
+  }
+  #Av1{
+    bottom:64%;
+    left:81%;
+  }
+  
+  #Av2{
+    bottom: 47%;
+    left:78%;
+  }
+
+  #popup1 {
+    width: 40%;
+    height: 100px;
+    top:8%;
+    left:20%;
+    background-image: url("../Images/Popup/1.jpg");
+  }
+  
+  #popup2 {
+    width: 40%;
+    height: 100px;
+    top:38%;
+    left:21%;
+    background-image: url("../Images/Popup/2.jpeg");
+  }
+  
+  #popup3 {
+    width: 40%;
+    height: 100px;
+    top:48%;
+    left:14%;
+    background-image: url("../Images/Popup/3.webp");
+  }
+  
+  #popup4 {
+    width: 40%;
+    height: 100px;
+    top:42%;
+    left:22%;
+    background-image: url("../Images/Popup/4.webp");
+  }
+  
+  #popup5 {
+    width: 40%;
+    height: 100px;
+    top:38%;
+    left:23%;
+    background-image: url("../Images/Popup/5.jpg");
+  }
+  
+  #popup6 {
+    width: 40%;
+    height: 100px;
+    top:25%;
+    left:34%;
+    background-image: url("../Images/Popup/6.webp");
+  }
+  
+  #popup7 {
+    width: 40%;
+    height: 100px;
+    top:35%;
+    left:34%;
+    background-image: url("../Images/Popup/7.webp");
+  }
+  
+  #popup8 {
+    width: 40%;
+    height: 100px;
+    top:20%;
+    left:34%;
+    background-image: url("../Images/Popup/8.jpg");
+  }
+  
+  #popup9 {
+    width: 40%;
+    height: 100px;
+    top:47%;
+    left:34%;
+    background-image: url("../Images/Popup/9.webp");
+  }
+
 }
 
 /* Estilos para pantallas más pequeñas */
@@ -123,6 +493,197 @@ body::before {
       display: block !important; /* Mostrar el menú */
       visibility: visible !important; /* Hacer visible */
   }
+  
+  .pin-Cap {
+    position: absolute;
+    width: 4%;
+    height:5%;
+    background-image: url("../Images/Icons/CA.png");
+    background-size: cover; 
+    bottom:78%;
+    left:15%;
+  }
+  
+  .pin-Iron {
+    position: absolute;
+    width: 4%;
+    height:5%;
+    background-image: url("../Images/Icons/IM.png");
+    background-size: cover; 
+    bottom:45%;
+    left:10%;
+  }
+  
+  .pin-Thor {
+    position: absolute;
+    width: 4%;
+    height:6%;
+    background-image: url("../Images/Icons/TH.png");
+    background-size: cover; 
+    bottom: 32%;
+    left:32%;
+  }
+  
+  .pin-Loki {
+    position: absolute;
+    width: 4%;
+    height:5%;
+    background-image: url("../Images/Icons/LO.png");
+    background-size: cover; 
+    bottom: 52%;
+    left:16%;
+  }
+  
+  .pin-CapMar {
+    position: absolute;
+    width: 5%;
+    height:5%;
+    background-image: url("../Images/Icons/capMar.png");
+    background-size:cover; 
+    bottom:55%;
+    left:52%;
+  }
+  
+  
+  .pin-Ave {
+    position: absolute;
+    width: 4%;
+    height:5%;
+    background-image: url("../Images/Icons/AV.png");
+    background-size: cover; 
+  }
+  
+  .pin-Ant {
+    position: absolute;
+    width: 4%;
+    height:5%;
+    background-image: url("../Images/Icons/AN.png");
+    background-size: cover; 
+    bottom:28%;
+    left:72%;
+  }
+  
+  .pin-Black {
+    position: absolute;
+    width: 4%;
+    height:5%;
+    background-image: url("../Images/Icons/BW.png");
+    background-size: cover; 
+    bottom:52%;
+    left:70%;
+  }
+  .pin-Spiderman {
+    position: absolute;
+    width: 3%;
+    height:5.5%;
+    background-image: url("../Images/Icons/SP.png");
+    background-size: cover; 
+    bottom:52%;
+    left:83%;
+  }
+  #Av1{
+    bottom:64%;
+    left:81%;
+  }
+  
+  #Av2{
+    bottom: 47%;
+    left:78%;
+  }
+
+  #popup1 {
+    width: 50%;
+    height: 60px;
+    top:8%;
+    left:20%;
+    background-image: url("../Images/Popup/1.jpg");
+    font-size: 30%;
+  }
+  
+  #popup2 {
+    width: 50%;
+    height: 60px;
+    top:38%;
+    left:21%;
+    background-image: url("../Images/Popup/2.jpeg");
+    font-size: 30%;
+
+  }
+  
+  #popup3 {
+    width: 50%;
+    height: 60px;
+    top:48%;
+    left:14%;
+    background-image: url("../Images/Popup/3.webp");
+    font-size: 30%;
+
+  }
+  
+  #popup4 {
+    width: 50%;
+    height: 60px;
+    top:42%;
+    left:38%;
+    background-image: url("../Images/Popup/4.webp");
+    font-size: 30%;
+
+  }
+  
+  #popup5 {
+    width: 40%;
+    height: 60px;
+    top:38%;
+    left:23%;
+    background-image: url("../Images/Popup/5.jpg");
+    font-size: 30%;
+
+  }
+  
+  #popup6 {
+    width: 40%;
+    height: 60px;
+    top:25%;
+    left:34%;
+    background-image: url("../Images/Popup/6.webp");
+    font-size: 30%;
+
+  }
+  
+  #popup7 {
+    width: 40%;
+    height: 60px;
+    top:35%;
+    left:34%;
+    background-image: url("../Images/Popup/7.webp");
+    font-size: 30%;
+
+  }
+  
+  #popup8 {
+    width: 40%;
+    height: 60px;
+    top:20%;
+    left:5%;
+    background-image: url("../Images/Popup/8.jpg");
+    font-size: 30%;
+
+  }
+  
+  #popup9 {
+    width: 40%;
+    height: 60px;
+    top:47%;
+    left:24%;
+    background-image: url("../Images/Popup/9.webp");
+    font-size: 30%;
+
+  }
+  
+
+
+
+
 }
 
 .menu-icon {
@@ -167,8 +728,8 @@ text-decoration-line: underline;
 }
 
 .image-box {
-  width: 200px; /* Ajusta el ancho según tus necesidades */
-  height: 250px; /* Ajusta la altura según tus necesidades */
+  width: 200px; 
+  height: 250px; 
   transform-style: preserve-3d; /* Asegura que los elementos hijos respeten la perspectiva */
   transition: transform 0.5s; /* Agrega una transición suave al transformar */
 }
@@ -259,7 +820,7 @@ text-decoration-line: underline;
     overflow: hidden;
     flex: 1; 
     
-  }
+  } 
   .carousel {
     width: auto; /* Ancho automático */
     margin: 0 auto; /* Margen */
@@ -381,106 +942,15 @@ li {
 }
 .popup {
   position: absolute;
-  font-family: 'Source Sans Pro', sans-serif; 
   font-weight: 300;
-  font-style: normal;
   text-align: left;
-  visibility: hidden;  /* Oculta el elemento por defecto */
+  visibility: hidden;  /* Ocultar elementos */
   background-size: cover; 
-  border-radius: 10px;  /* Redondea los bordes del elemento */
+  border-radius: 10px; 
+  border: 1px solid #FFF;
   padding: 3% 3% 3% 3%;
   color: white;
   z-index: 10;
 }
 
-#popup1 {
-  width: 45%;
-  top:8%;
-  left:17%;
-}
 
-.pin-Cap {
-  position: absolute;
-  width: 4%;
-  height:5%;
-  background-image: url("../Images/Icons/CA.png");
-  background-size: cover; 
-  bottom:78%;
-  left:15%;
-}
-
-.pin-Iron {
-  position: absolute;
-  width: 4%;
-  height:5%;
-  background-image: url("../Images/Icons/IM.png");
-  background-size: cover; 
-  bottom:45%;
-  left:10%;
-}
-
-.pin-Thor {
-  position: absolute;
-  width: 4%;
-  height:6%;
-  background-image: url("../Images/Icons/TH.png");
-  background-size: cover; 
-  bottom: 32%;
-  left:32%;
-}
-
-.pin-Loki {
-  position: absolute;
-  width: 4%;
-  height:5%;
-  background-image: url("../Images/Icons/LO.png");
-  background-size: cover; 
-  bottom: 52%;
-  left:16%;
-}
-
-.pin-Ave {
-  position: absolute;
-  width: 4%;
-  height:5%;
-  background-image: url("../Images/Icons/AV.png");
-  background-size: cover; 
-}
-
-.pin-Ant {
-  position: absolute;
-  width: 4%;
-  height:5%;
-  background-image: url("../Images/Icons/AN.png");
-  background-size: cover; 
-  bottom:28%;
-  left:72%;
-}
-
-.pin-Black {
-  position: absolute;
-  width: 4%;
-  height:5%;
-  background-image: url("../Images/Icons/BW.png");
-  background-size: cover; 
-  bottom:52%;
-  left:70%;
-}
-.pin-Spiderman {
-  position: absolute;
-  width: 3%;
-  height:5.5%;
-  background-image: url("../Images/Icons/SP.png");
-  background-size: cover; 
-  bottom:52%;
-  left:83%;
-}
-#Av1{
-  bottom:64%;
-  left:81%;
-}
-
-#Av2{
-  bottom: 47%;
-  left:78%;
-}
